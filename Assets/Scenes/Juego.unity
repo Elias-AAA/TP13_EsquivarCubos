@@ -291,6 +291,7 @@ GameObject:
   - component: {fileID: 176032164}
   - component: {fileID: 176032166}
   - component: {fileID: 176032165}
+  - component: {fileID: 176032167}
   m_Layer: 5
   m_Name: Puntaje
   m_TagString: Untagged
@@ -435,6 +436,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176032163}
   m_CullTransparentMesh: 0
+--- !u!114 &176032167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176032163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e843dc88a9dd004cb92fa07bb8a464d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texto: {fileID: 0}
 --- !u!1 &269602329
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,7 +701,6 @@ GameObject:
   - component: {fileID: 1185384814}
   - component: {fileID: 1185384813}
   - component: {fileID: 1185384812}
-  - component: {fileID: 1185384817}
   - component: {fileID: 1185384818}
   m_Layer: 0
   m_Name: CuboCaida
@@ -710,7 +723,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &1185384813
 BoxCollider:
@@ -784,19 +797,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1185384817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185384811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 875a76ee63a50a7429ca376477378b28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!114 &1185384818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -809,6 +809,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a90a2d87c158ae47add58bc77906b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mid: 0.31
+  der: 1.71
+  izq: -1.09
+  speed: 5
 --- !u!1 &2110533380
 GameObject:
   m_ObjectHideFlags: 0
